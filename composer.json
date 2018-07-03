@@ -1,0 +1,16 @@
+{
+    "name": "cmmarslender/cf-dns",
+    "description": "Updates CloudFlare DNS Records based on current IP",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Chris Marslender",
+            "email": "chrismarslender@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "rmccue/requests": "dev-master"
+    }
+}
