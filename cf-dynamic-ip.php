@@ -26,7 +26,7 @@ if ( file_exists( $cache_file ) ) {
 	$cache_json = json_decode( file_get_contents( $cache_file ), true );
 }
 
-$current_ip = file_get_contents( $ip_service );
+$current_ip = trim( file_get_contents( $ip_service ) );
 
 echo " - Current IP: {$current_ip} \n";
 

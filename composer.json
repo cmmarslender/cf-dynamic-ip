@@ -1,6 +1,6 @@
 {
-    "name": "cmmarslender/cf-dns",
-    "description": "Updates CloudFlare DNS Records based on current IP",
+    "name": "cmmarslender/cf-dynamic-ip",
+    "description": "Updates a CloudFlare DNS record based on current IP",
     "type": "project",
     "license": "MIT",
     "authors": [
