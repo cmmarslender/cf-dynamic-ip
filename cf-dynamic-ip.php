@@ -9,13 +9,12 @@ require_once __DIR__  . '/vendor/autoload.php';
 /* Supported Config Variables */
 $zone = isset( $_ENV['ZONE'] ) ? $_ENV['ZONE'] : false;
 $record = isset( $_ENV['RECORD'] ) ? $_ENV['RECORD'] : false;
-$email = isset( $_ENV['CF_EMAIL'] ) ? $_ENV['CF_EMAIL'] : false;
 $api_key = isset( $_ENV['CF_API_KEY'] ) ? $_ENV['CF_API_KEY'] : false;
 $ip_service = isset( $_ENV['IP_SERVICE'] ) ? $_ENV['IP_SERVICE'] : false;
 $interval = isset( $_ENV['INTERVAL'] ) ? $_ENV['INTERVAL'] : 300;
 
-if ( ! $zone || ! $record || ! $email || ! $api_key || ! $ip_service ) {
-	die( "You must set `ZONE`, `RECORD`, `CF_EMAIL`, `CF_API_KEY`, and `IP_SERVICE` environment variables to use this \n" );
+if ( ! $zone || ! $record || ! $api_key || ! $ip_service ) {
+	die( "You must set `ZONE`, `RECORD`, `CF_API_KEY`, and `IP_SERVICE` environment variables to use this \n" );
 }
 
 do {
