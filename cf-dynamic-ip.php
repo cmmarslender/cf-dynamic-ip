@@ -36,8 +36,7 @@ do {
 		// Update record in CF
 		$cf_api_base = 'https://api.cloudflare.com/client/v4/';
 		$base_headers = array(
-			'X-Auth-Email' => $email,
-			'X-Auth-Key' => $api_key,
+			'Authorization' => "Bearer ${api_key}",
 			'Content-Type' => 'application/json',
 		);
 
